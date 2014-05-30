@@ -1,0 +1,46 @@
+{
+  "Name": "Brewmaster.TestCsTemplate",
+  "Description": " This is a demo template.",
+  "Parameters": [
+    {
+      "Name": "Region",
+      "Type": "String",
+      "TypeHint": "AzureRegionName",
+      "Description": "Name of Azure region."
+    },
+    {
+      "Name": "AffinityGroup",
+      "Type": "String",
+      "TypeHint": "AzureAffinityGroupName",
+      "Description": "Name of Azure affinity group."
+    },
+    {
+      "Name": "CloudService",
+      "Type": "String",
+      "TypeHint": "AzureCloudService",
+      "Description": "Name of cs"
+    }
+  ],
+  "Network": {
+    "DnsServers": [],
+    "LocalSites": [],
+    "VirtualSites": []
+  },
+  "AffinityGroup": {
+    "Name": "{{AffinityGroup}}",
+    "Region": "{{Region}}"
+  },
+  "StorageAccounts": [],
+  "CloudServices": [
+    {
+      "Name": "{{CloudService}}",
+      "AffinityGroup": "{{AffinityGroup}}",
+      "Region": "{{Region}}",
+      "Description": "Brewmaster test cloud service"
+    }
+  ],
+  "DeploymentGroups": [],
+  "Credentials": [],
+  "ConfigSets": [],
+  "Configurations": []
+}
