@@ -32,14 +32,7 @@
     "Region": "{{Region}}"
   },
   "StorageAccounts": [],
-  "CloudServices": [
-    {
-      "Name": "{{CloudService}}",
-      "AffinityGroup": "{{AffinityGroup}}",
-      "Region": "{{Region}}",
-      "Description": "Brewmaster test cloud service"
-    }
-  ],
+  "CloudServices": [],
   "DeploymentGroups": [],
   "Credentials": [],
   "ConfigSets": [],
