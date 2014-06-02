@@ -32,12 +32,6 @@
       "Type": "String",
       "TypeHint": "string",
       "Description": "Name of ds"
-    },
-    {
-      "Name": "VmSize",
-      "Type": "String",
-      "TypeHint": "AzureRoleSize",
-      "Description": "no of vm"
     }
   ],
   "Network": {
@@ -60,7 +54,7 @@
         "VirtualMachines": [
           {
             "Name": "{{ServerNamePrefix}}",
-            "RoleSize": "{{VmSize}}",
+            "RoleSize": "ExtraSmall",
             "AvailabilitySet": "arr-avset",
             "OsVirtualDisk": {
               "OsType": "Windows",
