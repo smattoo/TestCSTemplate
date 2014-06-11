@@ -4,18 +4,6 @@
   "Version": "1.1.3",
   "Parameters": [
     {
-      "Name": "Region",
-      "Type": "String",
-      "TypeHint": "AzureRegionName",
-      "Description": "Name of Azure region."
-    },
-    {
-      "Name": "AffinityGroup",
-      "Type": "String",
-      "TypeHint": "AzureAffinityGroupName",
-      "Description": "Name of Azure affinity group."
-    },
-    {
       "Name": "CloudService",
       "Type": "String",
       "TypeHint": "AzureCloudServiceName",
@@ -40,8 +28,8 @@
     "VirtualSites": []
   },
   "AffinityGroup": {
-    "Name": "{{AffinityGroup}}",
-    "Region": "{{Region}}"
+    "Name": "AffinityGroup1",
+    "Region": "East US"
   },
   "StorageAccounts": [],
   "CloudServices": [
