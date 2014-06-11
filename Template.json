@@ -10,6 +10,12 @@
       "Description": "Name of cs"
     },
     {
+      "Name": "AffinityGroup",
+      "Type": "String",
+      "TypeHint": "AzureAffinityGroupName",
+      "Description": "Name of Azure affinity group."
+    },
+    {
       "Name": "DiskStore",
       "Type": "String",
       "TypeHint": "AzureStorageName",
@@ -28,7 +34,7 @@
     "VirtualSites": []
   },
   "AffinityGroup": {
-    "Name": "burnbrew",
+    "Name": "{{AffinityGroup}}",
     "Region": "Japan East"
   },
   "StorageAccounts": [],
