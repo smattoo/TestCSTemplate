@@ -43,13 +43,13 @@
       "Name": "{{CloudService}}",
       "AffinityGroup": "{{AffinityGroup}}",
       "Region": "{{Region}}",
-      "Description": "Brewmaster ARR Cloud Service",
+      "Description": "Brewmaster Single VM",
       "Deployment": {
         "VirtualMachines": [
           {
             "Name": "{{ServerNamePrefix}}",
             "RoleSize": "ExtraSmall",
-            "AvailabilitySet": "arr-avset",
+            "AvailabilitySet": "vm-avset",
             "OsVirtualDisk": {
               "OsType": "Windows",
               "OsImageName": "a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-R2-*"
