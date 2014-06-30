@@ -26,12 +26,6 @@
       "Type": "String",
       "TypeHint": "AzureStorageName",
       "Description": "Name of ds"
-    },
-    {
-      "Name": "ServerNamePrefix",
-      "Type": "String",
-      "TypeHint": "string",
-      "Description": "Name of ds"
     }
   ],
   "Network": {
@@ -43,13 +37,20 @@
     "Name": "{{AffinityGroup}}",
     "Region": "{{Region}}"
   },
-  "StorageAccounts": [],
+  "StorageAccounts": [
+  {
+      "Name": "{{DiskStore}}",
+      "AffinityGroup": "{{AffinityGroup}}",
+      "Region": "{{Region}}",
+      "Description": "Single VM storage"      
+    }
+  ],
   "CloudServices": [
     {
       "Name": "{{CloudService}}",
       "AffinityGroup": "{{AffinityGroup}}",
       "Region": "{{Region}}",
-      "Description": "Brewmaster Single VM"      
+      "Description": "Single VM cs"      
     }
   ]  
 }
